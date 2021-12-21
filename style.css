@@ -31,14 +31,22 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  width: 100%;
+  padding: 10px;
 }
 
 /* ---  Groups & Items --- */
 
 .group {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .item {
@@ -62,6 +70,14 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+  word-wrap: break-word;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
 }
 
 header nav ul li {
@@ -72,11 +88,6 @@ header nav ul li a {
   color: #fff;
   text-decoration: none;
   padding: 0 20px 0 0;
-}
-
-header nav ul li a:hover {
-  color: #bdbdbd;
-  text-decoration: none;
 }
 
 /* -------  Search Form ------- */
@@ -117,3 +128,42 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  /*----header area ---- */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+
+  .logo {
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 30px;
+  }
+
+  header nav ul li a:hover {
+    color: #bdbdbd;
+    text-decoration: none;
+  }
+  /*----search forms ----*/
+  .group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  form select,
+  form input {
+    margin-bottom: 20px;
+    width: 280px;
+  }
+  /*----about ----*/
+
+  /*----ideas ----*/
+  /*----Thinkful host ----*/
+}
