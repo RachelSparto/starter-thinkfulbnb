@@ -150,7 +150,7 @@ footer p {
     color: #bdbdbd;
     text-decoration: none;
   }
-  /*----search forms ----*/
+
   .group {
     display: flex;
     flex-direction: row;
@@ -162,8 +162,4 @@ footer p {
     margin-bottom: 20px;
     width: 280px;
   }
-  /*----about ----*/
-
-  /*----ideas ----*/
-  /*----Thinkful host ----*/
 }
