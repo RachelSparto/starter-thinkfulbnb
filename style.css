@@ -138,6 +138,13 @@ footer p {
     padding: 0 30px;
   }
 
+  .space-between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .logo {
     margin: 14px 0;
     padding-top: 0;
